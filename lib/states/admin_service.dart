@@ -55,7 +55,10 @@ class _AdminServiceState extends State<AdminService> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
+      appBar: AppBar(leading:  const Padding(
+        padding: EdgeInsets.all(8.0),
+        child: ShowLogo(),
+      ),
         backgroundColor: Colors.white,
         foregroundColor: MyConstant.dark,
         actions: [
